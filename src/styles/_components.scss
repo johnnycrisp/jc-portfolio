@@ -1,0 +1,16 @@
+// nav
+
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+
+    li {
+        display: flex;
+        flex-direction: column;
+    }
+    span {
+        font-size: .7rem;
+    }
+}

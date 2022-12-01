@@ -14,14 +14,34 @@ sans-serif;
     transition: 0.18s linear all;
 }
 
+.site-wrapper {
+    padding: 1rem;
+}
+
 body {
     color: $color-dark;
     font-family: $font1;
     background-color: $color-light;
 }
 
+a {
+    color: $color-dark;
+    text-decoration: none;
+    &:visited {
+        color: $color-dark;
+        text-decoration: none;
+    }
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
 p {
     font-size: 18px;
     font-weight: 400;
     line-height: 1.2;
+}
+
+h1 {
+    font-size: 3rem;
 }

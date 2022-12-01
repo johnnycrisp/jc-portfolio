@@ -1,15 +1,15 @@
 import * as React from "react"
 import "../styles/main.scss"
 import Footer from "./Footer"
-import Header from "./Header"
+import Nav from "./Nav"
 
 const Layout = ({ children }) => {
   return (
-    <>
-      <Header />
+    <div className="site-wrapper">
+      <Nav />
       {children}
       <Footer />
-    </>
+    </div>
   )
 }
 

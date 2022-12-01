@@ -1,7 +1,9 @@
-import { graphql } from 'gatsby'
+import { graphql, Link } from 'gatsby'
 import React from 'react'
 import ComponentSelector from '../components/ComponentSelector'
 import Layout from '../components/Layout'
+import Seo from '../components/Seo'
+
 
 const index = ({data}) => {
     console.log(data)
@@ -9,7 +11,8 @@ const index = ({data}) => {
   return (
     <>
     <Layout>
-    <ComponentSelector components={components} />
+    {/* <Seo title="Work" /> */}
+    <h1>HOME PAGE</h1>
     </Layout>
     </>
   )
