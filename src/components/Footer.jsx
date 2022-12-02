@@ -3,7 +3,7 @@ import React from 'react';
 
 const Footer = () => (
   <footer>
-    <p className="footer__copy">&copy; Johnny {new Date().getFullYear()}</p>
+    <p className="footer__copy mt-5">&copy; Johnny {new Date().getFullYear()}</p>
     {/* <Link to="">Back to top</Link> */}
   </footer>
 );

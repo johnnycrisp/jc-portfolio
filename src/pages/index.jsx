@@ -1,5 +1,5 @@
 import { graphql, Link } from 'gatsby'
-import { StaticImage } from 'gatsby-plugin-image'
+import { GatsbyImage, getImage, StaticImage } from 'gatsby-plugin-image'
 import React, {useState} from 'react'
 import {GiStarShuriken, GiDuck} from 'react-icons/gi'
 // import ComponentSelector from '../components/ComponentSelector'
@@ -7,6 +7,7 @@ import Footer from '../components/Footer'
 // import Layout from '../components/Layout'
 import Nav from '../components/Nav'
 // import Seo from '../components/Seo'
+import RunningGif from '../assets/images/running.gif'
 
 
 const index = ({data}) => {
@@ -38,14 +39,14 @@ const index = ({data}) => {
        <section className="home__lower">
        <div className="home__desc">
         <GiStarShuriken />
-        <p>A FORMER UX COPYWRITER</p>
+        <p>A UX COPYWRITER FOR 5+ YEARS</p>
        </div>
       <div className="image__wrapper-home">
-        <StaticImage className="home__image" src="../assets/images/running.gif" alt="running man" />
+        <img className="home__image" src={RunningGif} alt="running man" />
       </div>
       <div className="home__desc">
         <GiStarShuriken />
-        <p>MAKING JAMSTACK WEBSITES</p>
+        <p>NOW MAKING VERY NICE WEBSITES</p>
       </div>
       </section>
     </div>
