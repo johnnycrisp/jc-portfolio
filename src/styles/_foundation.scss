@@ -1,26 +1,41 @@
-$color-primary: #5a5225;
+/* Color Theme Swatches in Hex */
+$color-blue-dark: #417CF2;
+$color-blue-light: #6393F2;
+$color-yellow-light: #F2E963;
+$color-yellow-dark: #D9C359;
+$color-red: #F26363;
 $color-light: #faf7f3;
-$color-dark: #1b1e18;
-$color-secondary: #d9baa8;
+$color-dark: black;
 
 @import url("https://use.typekit.net/imu3mbe.css");
 
-$font1: "acumin-pro",
+$font-primary: "Roobert-Regular",
 sans-serif;
+
+$font-secondary: 'roxborough-cf', serif;
+
+@font-face {
+    font-family: $font-secondary;
+    font-style: normal;
+    font-weight: normal;
+    src: url('../assets/fonts/Roobert-Regular.ttf') format('truetype');
+}
 
 * {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     transition: 0.18s linear all;
+    box-sizing: border-box;
 }
 
 .site-wrapper {
     padding: 1rem;
+    height: 100vh;
 }
 
 body {
     color: $color-dark;
-    font-family: $font1;
+    font-family: $font-primary;
     background-color: $color-light;
 }
 
@@ -37,11 +52,15 @@ a {
 }
 
 p {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 400;
     line-height: 1.2;
 }
 
 h1 {
-    font-size: 3rem;
+    font-family: $font-secondary;
+    font-weight: 400;
+    font-style:italic;
+    font-size: 2rem;
+    text-align: center;
 }
