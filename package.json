@@ -5,6 +5,7 @@
   "version": "0.1.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
+    "bootstrap": "^5.2.3",
     "gatsby": "^5.2.0",
     "gatsby-plugin-image": "^3.2.0",
     "gatsby-plugin-manifest": "^5.2.0",
@@ -15,8 +16,10 @@
     "gatsby-source-filesystem": "^5.2.0",
     "gatsby-transformer-sharp": "^5.2.0",
     "react": "^18.2.0",
+    "react-bootstrap": "^2.6.0",
     "react-dom": "^18.2.0",
     "react-helmet": "^6.1.0",
+    "react-icons": "^4.7.1",
     "sass": "^1.56.1"
   },
   "devDependencies": {

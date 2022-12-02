@@ -5,7 +5,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
+    &.display {
     background-color: $color-dark;
+}
 }
 
 nav.center__nav {
@@ -14,6 +17,8 @@ nav.center__nav {
     justify-content: space-between;
     width: 100%;
     padding: 1.5rem;
+    background-clip: border-box;
+    transition: 1s;
     ul {
             display: flex;
             width: 100%;
@@ -24,15 +29,17 @@ nav.center__nav {
             li {
                 display: flex;
                 flex-direction: column;
-                color: $color-light;
             }
 
-            a {
-                color: $color-light;
-            }
-    
             span {
                 font-size: .7rem;
+                &.menu__item-expanded {
+                        color: $color-light;
+            }
+        }
+
+            a.menu__item-expanded {
+                color: $color-light;
             }
         }
 }
@@ -55,9 +62,41 @@ header {
 
 // home
 
-.subtitle {
-    font-size: .7rem;
+// .subtitle {
+//     text-align: center;
+// }
+
+.hello__wrapper {
+    h1 {
+        margin-bottom: 2.5rem;
+    }
     text-align: center;
+}
+
+section.home__lower {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: .5rem;
+
+    p {
+        text-align: center;
+        margin-top: .5rem;
+    }
+
+}
+
+.home__desc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+    .home__desc-img {
+        height: 3rem;
+        width: 3rem;
+        border-radius: 50%;
+    }
 }
 
 .home__wrapper {
@@ -96,13 +135,14 @@ footer {
     }
 }
 
+// h1 animations
+
 .letter {
-    animation: bounce 0.65s cubic-bezier(0.05, 0, 0.2, 1) alternate;
+    animation: bounce 0.5s cubic-bezier(0.05, 0, 0.2, 1) alternate;
     animation-iteration-count: 1.9;
     animation-delay: .45s;
     display: inline-block;
     transform: translate3d(0, 0, 0);
-    margin-top: 0.5em;
 }
 
 .letter:nth-of-type(1) {
@@ -129,6 +169,27 @@ footer {
     animation-delay: 0.4166666667s;
 }
 
+.letter:nth-of-type(8) {
+    animation-delay: 0.4966666667s;
+}
+
+.letter:nth-of-type(9) {
+    animation-delay: 0.5766666667s;
+}
+
+.letter:nth-of-type(10) {
+    animation-delay: 0.6566666667s;
+}
+
+.letter:nth-of-type(11) {
+    animation-delay: 0.7366666667s;
+}
+
+.letter:nth-of-type(12) {
+    animation-delay: 0.8166666667s;
+}
+
+
 @keyframes bounce {
     0% {
         transform: translate3d(0, 0, 0);
@@ -136,5 +197,24 @@ footer {
 
     100% {
         transform: translate3d(0, -.5em, 0);
+    }
+}
+
+//Work 
+
+.work__wrapper {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    h2 {
+        text-align: center;
+        margin-bottom: 1.5rem
+    }
+
+    .work__image {
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 }
