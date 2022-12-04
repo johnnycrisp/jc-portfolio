@@ -1,10 +1,14 @@
 import React from 'react'
-import { Link } from 'gatsby'
+import { graphql, Link } from 'gatsby'
 import Layout from '../components/Layout'
-import Seo from '../components/Seo'
-import { GatsbyImage, getImage, StaticImage } from 'gatsby-plugin-image'
+// import Seo from '../components/Seo'
+import ComponentSelector from '../components/ComponentSelector'
+// import { GatsbyImage, getImage, StaticImage } from 'gatsby-plugin-image'
 
-const work = () => {
+const work = ({data}) => {
+    const components = data.work.components
+    console.log('work', components)
+
   return (
    <Layout>
     {/* <Seo title="Work" /> */}
@@ -15,22 +19,27 @@ const work = () => {
         <span className="letter">k</span>
         <span className="letter">.</span>
     </h1>
-    <div className="work__wrapper">
-        <section className="work__image">
-            <div>
-                <StaticImage className="home__image" src="../assets/images/running.gif" alt="running man" />
-            </div>
-        </section>
-        <section className="work__text">
-            <div>
-                <h2>Port Item Title</h2>
-                <p>Port item text Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti, mollitia.</p>
-            </div>
-        </section> 
-    </div>
-    
+    <ComponentSelector components={components} />
   </Layout>
   )
 }
 
 export default work
+
+
+
+export const query = graphql`
+  query WorkQuery {
+    work: datoCmsPage(pageSlug: { eq: "work" }) {
+    title
+    pageSlug
+    components {
+        componentId
+      projectTitle
+      projectText
+      projectImage {
+        gatsbyImageData(placeholder: BLURRED)
+      }
+    }
+    }
+  }`

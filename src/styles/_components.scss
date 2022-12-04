@@ -204,17 +204,17 @@ footer {
 
 //Work 
 
-.work__wrapper {
+.project__wrapper {
     margin-top: 2rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
 
-    h2 {
-        text-align: center;
+    h2, .project__text {
+        text-align: left;
         margin-bottom: 1.5rem
     }
 
-    .work__image {
+    .project__image {
         display: flex;
         align-items: center;
         justify-content: center;

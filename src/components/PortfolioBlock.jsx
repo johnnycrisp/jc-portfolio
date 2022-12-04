@@ -1,15 +1,26 @@
 import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 import React from 'react'
+import {Button} from 'react-bootstrap'
 
 const PortfolioBlock = ({component, key}) => {
     console.log(component)
   return (
-    <>
-    <div key={key}>
-    <p>{component.portfolioTitle}</p>
-    <GatsbyImage image={getImage(component.portfolioImage)} />
-    </div>
-    </>
+    <section className="project__wrapper" key={key}>
+        <div className="project__image">
+            <div>
+                <GatsbyImage image={getImage(component.projectImage)} alt={key}/>
+            </div>
+        </div>
+        <div className="project__text">
+            <div>
+                <h2>{component.projectTitle}</h2>
+                <p>{component.projectText}</p>
+            </div>
+            <Button variant="outline-dark">Live Site</Button>
+            <Button variant="outline-dark">Github</Button>
+
+        </div> 
+    </section>
   )
 }
 

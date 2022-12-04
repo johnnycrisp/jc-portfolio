@@ -2,7 +2,7 @@ import * as React from "react"
 import PortfolioBlock from "./PortfolioBlock"
 
 export default function ComponentSelector({ components }) {
-    console.log(components)
+    console.log('components', components)
   return (
     <>
       {components?.map(component => {
@@ -10,7 +10,7 @@ export default function ComponentSelector({ components }) {
           case "portfolio_block":
             return (
               <PortfolioBlock
-                key={component.headline}
+                key={component.projectTitle}
                 component={component}
               />
             )

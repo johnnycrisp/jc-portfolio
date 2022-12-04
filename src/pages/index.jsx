@@ -1,6 +1,6 @@
-import { graphql, Link } from 'gatsby'
-import { GatsbyImage, getImage, StaticImage } from 'gatsby-plugin-image'
-import React, {useState} from 'react'
+import { graphql } from 'gatsby'
+// import { GatsbyImage, getImage, StaticImage } from 'gatsby-plugin-image'
+import React from 'react'
 import {GiStarShuriken, GiDuck} from 'react-icons/gi'
 // import ComponentSelector from '../components/ComponentSelector'
 import Footer from '../components/Footer'
@@ -11,7 +11,7 @@ import RunningGif from '../assets/images/running.gif'
 
 
 const index = ({data}) => {
-    console.log(data)
+    console.log('index', data)
    const components = data?.datoCmsPage?.components
   return (
     <>
@@ -32,14 +32,14 @@ const index = ({data}) => {
         <span className="letter">r</span>
         <span className="letter">e</span>
         <span className="letter">.</span></h1>
-        {/* <p className="subtitle">I'm Johnny</p> */}
+        <p className="subtitle mt-2">I'm Johnny</p>
       </div>
     
        <Nav />
        <section className="home__lower">
        <div className="home__desc">
         <GiStarShuriken />
-        <p>A UX COPYWRITER FOR 5+ YEARS</p>
+        <p>A SAAS COPYWRITER FOR 5+ YEARS</p>
        </div>
       <div className="image__wrapper-home">
         <img className="home__image" src={RunningGif} alt="running man" />
@@ -64,8 +64,9 @@ export const query = graphql`
     pageSlug
     components {
         componentId
-      portfolioTitle
-      portfolioImage {
+      projectTitle
+      projectText
+      projectImage {
         gatsbyImageData
       }
     }
