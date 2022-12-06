@@ -74,6 +74,11 @@ button + button {
 
 .btn.btn-outline-dark {
 
+   border: 0;
+   border-radius: 0;
+   padding: 3px;
+   border-bottom: 1px solid $color-dark;
+
     &:hover {
         background: $color-dark;
     }

@@ -3,7 +3,8 @@ import { graphql, Link } from 'gatsby'
 import Layout from '../components/Layout'
 // import Seo from '../components/Seo'
 import ComponentSelector from '../components/ComponentSelector'
-// import { GatsbyImage, getImage, StaticImage } from 'gatsby-plugin-image'
+import { GatsbyImage, getImage, StaticImage } from 'gatsby-plugin-image'
+import {Button} from 'react-bootstrap'
 
 const work = ({data}) => {
     const components = data.work.components
@@ -12,14 +13,40 @@ const work = ({data}) => {
   return (
    <Layout>
     {/* <Seo title="Work" /> */}
-    
-      <h1>
+    <div className="work__wrapper-hero">
+    <div>
+    <h1>
         <span className="letter">W</span>
         <span className="letter">o</span>
         <span className="letter">r</span>
         <span className="letter">k</span>
         <span className="letter">.</span>
     </h1>
+    <p>An extremely humble selection of my most recent work.</p>
+    <ul>
+      <li>sam finney, dpo</li>
+      <li>godzilla unfiltered</li>
+      <li>project three</li>
+      <li>space website</li>
+      <li>to do list</li>
+    </ul>
+        <div className="project__text">
+          <h2>{components[0].projectTitle}</h2>
+          <p>{components[0].projectText}</p>
+          <div className="button-group">
+              <Button variant="outline-dark">Live Site</Button>
+              <Button variant="outline-dark">Github</Button>
+          </div>
+        </div>
+    </div>
+    <div className="project__wrapper-featured">
+      <div className="project__image">
+            <div>
+                <GatsbyImage image={getImage(components[0].projectImage)} alt="ok"/>
+            </div>
+        </div>
+        </div> 
+    </div>
     <div className="work__wrapper">
     <ComponentSelector components={components} />
     </div>
