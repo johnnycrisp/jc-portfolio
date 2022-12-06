@@ -12,13 +12,13 @@ const PortfolioBlock = ({component, key}) => {
             </div>
         </div>
         <div className="project__text">
-            <div>
+            
                 <h2>{component.projectTitle}</h2>
                 <p>{component.projectText}</p>
-            </div>
+        <div className="button-group">
             <Button variant="outline-dark">Live Site</Button>
             <Button variant="outline-dark">Github</Button>
-
+        </div>
         </div> 
     </section>
   )

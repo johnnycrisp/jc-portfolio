@@ -7,12 +7,15 @@ import OffcanvasNav from "./OffcanvasNav"
 
 const Layout = ({ children }) => {
   return (
+    <>
     <div className="site-wrapper">
       <Nav />
       <OffcanvasNav />
+      
       {children}
       <Footer />
     </div>
+    </>
   )
 }
 

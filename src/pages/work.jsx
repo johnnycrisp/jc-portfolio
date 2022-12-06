@@ -12,14 +12,18 @@ const work = ({data}) => {
   return (
    <Layout>
     {/* <Seo title="Work" /> */}
-    <h1>
+    
+      <h1>
         <span className="letter">W</span>
         <span className="letter">o</span>
         <span className="letter">r</span>
         <span className="letter">k</span>
         <span className="letter">.</span>
     </h1>
+    <div className="work__wrapper">
     <ComponentSelector components={components} />
+    </div>
+    
   </Layout>
   )
 }
@@ -38,7 +42,9 @@ export const query = graphql`
       projectTitle
       projectText
       projectImage {
-        gatsbyImageData(placeholder: BLURRED)
+        gatsbyImageData(
+          placeholder: BLURRED
+          )
       }
     }
     }

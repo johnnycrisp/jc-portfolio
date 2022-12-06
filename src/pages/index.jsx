@@ -18,8 +18,9 @@ const index = ({data}) => {
     <>
     {/* <Seo title="Work" /> */}
     <div className="site-wrapper">
+    <OffcanvasNav />
       <div className="home__wrapper">
-          <OffcanvasNav />
+          
           <header><p>johnny crisp</p><GiDuck /><p>frontend dev</p></header>
             <div className="hello__wrapper">
                 <h1>
@@ -53,9 +54,8 @@ const index = ({data}) => {
             </div>
             </section>
           </div>
-          <Footer />
     </div>
-    
+    <Footer />
     </>
   )
 }

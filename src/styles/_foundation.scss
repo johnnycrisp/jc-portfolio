@@ -29,7 +29,7 @@ $font-secondary: 'roxborough-cf', serif;
 }
 
 .site-wrapper {
-    min-height: 100vh;
+    min-height: calc(100vh - 80px);
     display: flex;
     flex-direction: column;
     
@@ -64,10 +64,21 @@ h1 {
     font-weight: 400;
     font-style:italic;
     font-size: 4rem;
-    margin-top: 1rem;
+    margin: 1rem 0 0 1rem;
     // text-align: center;
 }
 
 button + button {
     margin-left: .5rem;
+}
+
+.btn.btn-outline-dark {
+
+    &:hover {
+        background: $color-dark;
+    }
+    &:focus, &:visited {
+        box-shadow: none;
+    }
+
 }
