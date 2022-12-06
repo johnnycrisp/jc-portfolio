@@ -19,9 +19,10 @@ const index = ({data}) => {
     {/* <Seo title="Work" /> */}
     <div className="site-wrapper">
     <OffcanvasNav />
+    <header><p>johnny crisp</p><GiDuck /><p>frontend dev</p></header>
       <div className="home__wrapper">
           
-          <header><p>johnny crisp</p><GiDuck /><p>frontend dev</p></header>
+          
             <div className="hello__wrapper">
                 <h1>
               <span className="letter">H</span>

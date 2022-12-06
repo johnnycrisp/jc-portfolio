@@ -48,7 +48,7 @@
             // center-nav
         
             .nav__wrapper {
-                height: 80px;
+                height: 100px;
                 display: flex;
                 align-items: center;
                 justify-content: center;
@@ -84,7 +84,7 @@
                     }
         
                     span {
-                        font-size: .7rem;
+                        font-size: .6rem;
                         // color: $color-light;
         
                         &.menu__item-expanded {
@@ -105,7 +105,8 @@
                 justify-content: space-between;
                 align-items: center;
                 height: 80px;
-                padding: 1.5rem;
+                padding: 1.5rem 1.5rem 0 1.5rem;
+                width: 100%;
         
                 .nav__logo {
                     height: 2.5rem;
@@ -231,7 +232,7 @@
                 grid-template-columns: 1fr 2fr;
 
                 p {
-                    margin: 1rem 1.5rem;
+                    margin: 1rem 0;
                 }
             }
 
@@ -241,7 +242,7 @@
                             flex-direction: column;
                             justify-content: center;
                             align-items: center;
-                            padding: 2rem;
+                            padding-bottom: 2rem;
                             background: $color-yellow-light;
 
                             .project__image {
@@ -253,18 +254,43 @@
                                 height: 400px;
                             }
             
-                            .project__text {
-                                margin-top: 1rem;
-                                display: flex;
-                                flex-direction: column;
-                                align-items: center;
-            
-                                p {
-                                    text-align: center;
-                                    max-width: 500px;
-                                }
-                            }
                         }
+
+                        .work__hero-left {
+                            display: flex;
+                            padding-bottom: 1.5rem;
+                            flex-direction: column;
+                            justify-content: space-between;
+
+                            .project__text {
+                                    margin-top: 1rem;
+                                    display: flex;
+                                    padding: 1.5rem;
+                                    flex-direction: column;
+                                    align-items: flex-start;
+                                    justify-content: flex-end;
+                            
+                            
+                                    p {
+                                        text-align: left;
+                                        max-width: 500px;
+                                    }
+                                }
+
+
+                            .work__title {
+                                align-self: flex-start;
+                                justify-self: flex-start;
+
+                                p {
+                                    padding-left: 1.5rem;
+                                }
+                                
+                            }
+
+                        }
+
+                    
 }
 
 

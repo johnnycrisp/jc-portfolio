@@ -14,31 +14,34 @@ const work = ({data}) => {
    <Layout>
     {/* <Seo title="Work" /> */}
     <div className="work__wrapper-hero">
-    <div>
-    <h1>
-        <span className="letter">W</span>
-        <span className="letter">o</span>
-        <span className="letter">r</span>
-        <span className="letter">k</span>
-        <span className="letter">.</span>
-    </h1>
-    <p>An extremely humble selection of my most recent work.</p>
-    <ul>
-      <li>sam finney, dpo</li>
-      <li>godzilla unfiltered</li>
-      <li>project three</li>
-      <li>space website</li>
-      <li>to do list</li>
-    </ul>
-        <div className="project__text">
-          <h2>{components[0].projectTitle}</h2>
-          <p>{components[0].projectText}</p>
-          <div className="button-group">
-              <Button variant="outline-dark">Live Site</Button>
-              <Button variant="outline-dark">Github</Button>
+      <div className="work__hero-left">
+          <div className="work__title">
+            <h1>
+              <span className="letter">W</span>
+              <span className="letter">o</span>
+              <span className="letter">r</span>
+              <span className="letter">k</span>
+              <span className="letter">.</span>
+          </h1>
+          <p>A very humble selection of my most recent projects.</p>
           </div>
+          
+          <ul>
+            <li>sam finney, dpo</li>
+            <li>godzilla unfiltered</li>
+            <li>nick & seb</li>
+            <li>a space website</li>
+            <li>obligatory to-do list</li>
+          </ul>
+          <div className="project__text">
+              <h2>{components[0].projectTitle}</h2>
+              <p>{components[0].projectText}</p>
+              <div className="button-group">
+                  <Button variant="outline-dark">Live Site</Button>
+                  <Button variant="outline-dark">Github</Button>
+              </div>
         </div>
-    </div>
+      </div>
     <div className="project__wrapper-featured">
       <div className="project__image">
             <div>
