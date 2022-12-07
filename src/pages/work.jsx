@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 import { graphql, Link } from 'gatsby'
 import Layout from '../components/Layout'
 // import Seo from '../components/Seo'
@@ -6,16 +6,72 @@ import ComponentSelector from '../components/ComponentSelector'
 import { GatsbyImage, getImage, StaticImage } from 'gatsby-plugin-image'
 import {Button} from 'react-bootstrap'
 
-const work = ({data}) => {
+const Work = ({data}) => {
     const components = data.work.components
     console.log('work', components)
 
+
+const [ball, setBall] = useState(true)
+
+const handleBall = () => {
+  if (ball) {
+const cursor = document.querySelector("#cursor")
+const cursorBorder = document.querySelector("#cursor-border")
+const cursorPos = { x: 0, y: 0 }
+const cursorBorderPos = { x: 0, y: 0 }
+
+document.addEventListener("mousemove", (e) => {
+  cursorPos.x = e.clientX
+  cursorPos.y = e.clientY
+
+  cursor.style.transform = `translate(${e.clientX}px, ${e.clientY}px)`
+})
+
+requestAnimationFrame(function loop() {
+  const easting = 8
+  cursorBorderPos.x += (cursorPos.x - cursorBorderPos.x) / easting
+  cursorBorderPos.y += (cursorPos.y - cursorBorderPos.y) / easting
+
+  cursorBorder.style.transform = `translate(${cursorBorderPos.x}px, ${cursorBorderPos.y}px)`
+  requestAnimationFrame(loop)
+})
+
+document.querySelectorAll("[data-cursor]").forEach((item) => {
+  item.addEventListener("mouseover", (e) => {
+    // if (item.dataset.cursor === "pointer") {
+    //   cursorBorder.style.backgroundColor = "white"
+    //   cursorBorder.style.setProperty("--size", "30px")
+    // }
+    if (item.dataset.cursor === "pointer") {
+      cursorBorder.style.backgroundColor = "white"
+      cursor.style.opacity = "0"
+      cursorBorder.style.mixBlendMode = "difference"
+      cursorBorder.style.setProperty("--size", "60px")
+    }
+  });
+  item.addEventListener("mouseout", (e) => {
+    cursorBorder.style.backgroundColor = "unset";
+    cursorBorder.style.mixBlendMode = "unset";
+    cursorBorder.style.setProperty("--size", "50px");
+    cursor.style.opacity = "1"
+  });
+});
+
+} }
+
+useEffect(()=> {
+  handleBall()
+}, []
+)
+
   return (
    <Layout>
+  <div id="cursor"></div>
+  <div id="cursor-border"></div>
     {/* <Seo title="Work" /> */}
     <div className="work__wrapper-hero">
       <div className="work__hero-left">
-          <div className="work__title">
+          {/* <div className="work__title">
             <h1>
               <span className="letter">W</span>
               <span className="letter">o</span>
@@ -24,15 +80,15 @@ const work = ({data}) => {
               <span className="letter">.</span>
           </h1>
           <p>A very humble selection of my most recent projects.</p>
-          </div>
+          </div> */}
           
-          <ul>
+          {/* <ul>
             <li>sam finney, dpo</li>
             <li>godzilla unfiltered</li>
             <li>nick & seb</li>
             <li>a space website</li>
             <li>obligatory to-do list</li>
-          </ul>
+          </ul> */}
           <div className="project__text">
               <h2>{components[0].projectTitle}</h2>
               <p>{components[0].projectText}</p>
@@ -58,7 +114,7 @@ const work = ({data}) => {
   )
 }
 
-export default work
+export default Work
 
 
 

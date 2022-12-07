@@ -50,6 +50,8 @@ a {
     }
     &:hover {
         text-decoration: underline;
+        // z-index: 100000;
+        color: black;
     }
 }
 
@@ -63,7 +65,7 @@ h1 {
     font-family: $font-secondary;
     font-weight: 400;
     font-style:italic;
-    font-size: 4rem;
+    font-size: 3rem;
     margin: 1rem 0 0 1rem;
     // text-align: center;
 }

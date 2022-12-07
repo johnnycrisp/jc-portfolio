@@ -3,6 +3,7 @@ import { Link } from 'gatsby'
 
 const Nav = () => {
   const [isHovering, setIsHovering] = useState(false);
+  // const [isCurrentPage, setIsCurrentPage] = useState('home');
 
    const handleMouseOver = () => {
     setIsHovering(true);
@@ -12,8 +13,14 @@ const Nav = () => {
     setIsHovering(false);
   };
 
+  // const handlePageChange = () => {
+  //   if(isCurrentPage) {
+      
+  //   }
+  // };
+
   return (
-    <div className={ isHovering ? "nav__wrapper display" : "nav__wrapper"}>
+    <div data-cursor="pointer" className={ isHovering ? "nav__wrapper display" : "nav__wrapper"}>
       <nav className="center__nav">
         <ul>
           <li onMouseOver={handleMouseOver} onMouseOut={handleMouseOut}>

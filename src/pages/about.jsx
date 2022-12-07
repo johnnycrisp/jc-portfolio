@@ -10,14 +10,14 @@ const about = () => {
     <Layout>
     {/* <Seo title="About" /> */}
    
-    <h1>
+    {/* <h1>
         <span className="letter">A</span>
         <span className="letter">b</span>
         <span className="letter">o</span>
         <span className="letter">u</span>
         <span className="letter">t</span>
         <span className="letter">.</span>
-    </h1>
+    </h1> */}
     <div className="about__wrapper">
         <section className="about__image">
             <div>
