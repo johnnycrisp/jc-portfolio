@@ -1,5 +1,6 @@
 import React, {useState} from 'react'
 import { Link } from 'gatsby'
+import {GiStarShuriken, GiDuck} from 'react-icons/gi'
 
 const Nav = () => {
   const [isHovering, setIsHovering] = useState(false);
@@ -24,21 +25,23 @@ const Nav = () => {
       <nav className="center__nav">
         <ul>
           <li onMouseOver={handleMouseOver} onMouseOut={handleMouseOut}>
+            <span className={ isHovering ? "menu__item-expanded" : ""}>02</span>
+            <Link className={ isHovering ? "menu__item-expanded" : ""} to="/about">About</Link>
+          </li>
+          
+          <li onMouseOver={handleMouseOver} onMouseOut={handleMouseOut}>
             <span className={ isHovering ? "menu__item-expanded" : ""}>01</span>
             <Link className={ isHovering ? "menu__item-expanded" : ""} to="/">Home</Link>
           </li>
           <li onMouseOver={handleMouseOver} onMouseOut={handleMouseOut}>
-            <span className={ isHovering ? "menu__item-expanded" : ""}>02</span>
+            <span className={ isHovering ? "menu__item-expanded" : ""}>03</span>
             <Link className={ isHovering ? "menu__item-expanded" : ""} to="/work">Work</Link>
           </li>
-          <li onMouseOver={handleMouseOver} onMouseOut={handleMouseOut}>
-            <span className={ isHovering ? "menu__item-expanded" : ""}>03</span>
-            <Link className={ isHovering ? "menu__item-expanded" : ""} to="/about">About</Link>
-          </li>
-          <li onMouseOver={handleMouseOver} onMouseOut={handleMouseOut}>
+      
+          {/* <li onMouseOver={handleMouseOver} onMouseOut={handleMouseOut}>
             <span className={ isHovering ? "menu__item-expanded" : ""}>04</span>
             <Link className={ isHovering ? "menu__item-expanded" : ""} to="/contact">Contact</Link>
-          </li>
+          </li> */}
         </ul>
       </nav>
     </div>

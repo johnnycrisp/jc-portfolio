@@ -92,9 +92,9 @@ useEffect(()=> {
           <div className="project__text">
               <h2>{components[0].projectTitle}</h2>
               <p>{components[0].projectText}</p>
-              <div className="button-group">
-                  <Button variant="outline-dark">Live Site</Button>
-                  <Button variant="outline-dark">Github</Button>
+              <div>
+                  <Link className="button__project">Live Site</Link>
+                  <Link className="button__project">Github</Link>
               </div>
         </div>
       </div>

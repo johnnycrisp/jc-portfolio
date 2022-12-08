@@ -28,8 +28,12 @@ $font-secondary: 'roxborough-cf', serif;
     box-sizing: border-box;
 }
 
+ul {
+    margin-bottom: 0;
+}
+
 .site-wrapper {
-    min-height: calc(100vh - 80px);
+    height: calc(100vh - 80px);
     display: flex;
     flex-direction: column;
     
@@ -49,7 +53,7 @@ a {
         text-decoration: none;
     }
     &:hover {
-        text-decoration: underline;
+        // text-decoration: underline;
         // z-index: 100000;
         color: black;
     }
@@ -70,22 +74,61 @@ h1 {
     // text-align: center;
 }
 
-button + button {
+a.button__project + a.button__project {
     margin-left: .5rem;
 }
 
-.btn.btn-outline-dark {
+.button__project {
 
    border: 0;
+   font-family: $font-primary;
+   color: $color-dark;
    border-radius: 0;
    padding: 3px;
-   border-bottom: 1px solid $color-dark;
+//    border-bottom: 1px solid $color-dark;
+   cursor: pointer;
+
+    &::after {
+        display: inline-block;
+        content: '\27F6';
+        padding-left: 0.4rem;
+        background-color: none;
+        transition: transform 0.1s linear;
+        
+    }
 
     &:hover {
-        background: $color-dark;
+
+        &::after {
+            transform: rotate(-38deg);
+        }
     }
-    &:focus, &:visited {
-        box-shadow: none;
+
+}
+
+.button__project-left {
+
+    border: 0;
+    font-family: $font-primary;
+    color: $color-dark;
+    border-radius: 0;
+    padding: 3px;
+    //    border-bottom: 1px solid $color-dark;
+    cursor: pointer;
+
+    &::before {
+        display: inline-block;
+        content: '\27F5';
+        padding-right: 0.4rem;
+        background-color: none;
+        transition: transform 0.1s linear;
+    }
+
+    &:hover {
+
+        &::before {
+            transform: rotate(38deg);
+        }
     }
 
 }

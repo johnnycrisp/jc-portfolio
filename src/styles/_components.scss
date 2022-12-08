@@ -1,39 +1,36 @@
 // screensaver home 
 
-// $size: 300px;
+$size: 100px;
 
-// body {
-//     margin: 0;
-// }
 
-// .x,
-// .y {
-//     width: $size;
-//     height: $size;
-// }
+.x,
+.y {
+    width: $size;
+    height: $size;
+}
 
-// .x {
-//     animation: x 5s linear infinite alternate;
-// }
+.x {
+    animation: x 12s linear infinite alternate;
+}
 
-// .y {
-//     animation: y 2s linear infinite alternate;
-//     display: flex;
-//     flex-direction: column;
-//     align-items: center;
-// }
+.y {
+    animation: y 7s linear infinite alternate;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
-// @keyframes x {
-//     100% {
-//         transform: translateX(200px);
-//     }
-// }
+@keyframes x {
+    100% {
+        transform: translateX(calc(100vw - #{$size}));
+    }
+}
 
-// @keyframes y {
-//     100% {
-//         transform: translateY(300px);
-//     }
-// }
+@keyframes y {
+    100% {
+        transform: translateY(calc(100vh - 80px - #{$size}));
+    }
+}
 
 // cursor 
 

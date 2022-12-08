@@ -15,9 +15,9 @@ const PortfolioBlock = ({component, key}) => {
             
                 <h2>{component.projectTitle}</h2>
                 <p>{component.projectText}</p>
-        <div className="button-group">
-            <Button variant="outline-dark">Live Site</Button>
-            <Button variant="outline-dark">Github</Button>
+        <div>
+            <a className="button__project">Live Site</a>
+            <a className="button__project">Github</a>
         </div>
         </div> 
     </section>

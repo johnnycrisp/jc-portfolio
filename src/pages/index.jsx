@@ -1,4 +1,4 @@
-import { graphql } from 'gatsby'
+import { graphql, Link } from 'gatsby'
 // import { GatsbyImage, getImage, StaticImage } from 'gatsby-plugin-image'
 import React, { useEffect, useState } from 'react'
 import {GiStarShuriken, GiDuck} from 'react-icons/gi'
@@ -9,6 +9,7 @@ import Nav from '../components/Nav'
 import OffcanvasNav from '../components/OffcanvasNav'
 // import Seo from '../components/Seo'
 import RunningGif from '../assets/images/running.gif'
+
 
 
 const Index = ({data}) => {
@@ -72,14 +73,17 @@ useEffect(()=> {
     <>
     {/* <Seo title="Work" /> */}
   <div id="cursor"></div>
-  <div id="cursor-border"></div>
-    <div className="site-wrapper">
-    <OffcanvasNav />
+  <div id="cursor-border"></div> 
+  <div className="site-wrapper">
+  <OffcanvasNav />
     <Nav />
+  <div className="x">
+              <img className="y" src={RunningGif} alt="running man" />
+            </div>
       <div className="home__wrapper">
-          
-          
-            <div className="hello__wrapper mt-4">
+     
+        
+            <div className="hello__wrapper">
                 <h1>
               <span className="letter">H</span>
               <span className="letter">e</span>
@@ -93,8 +97,15 @@ useEffect(()=> {
               <span className="letter">r</span>
               <span className="letter">e</span> */}
               <span className="letter">.</span></h1>
-            </div><header><p>johnny crisp</p><GiDuck /><p>frontend dev</p></header>
-            <section className="home__lower">
+                <div className="home__questions">
+                  <Link to="/about" className="button__project-left mt-2">who are you</Link>
+                  <Link to="/work" className="button__project mt-2">what are you doing</Link>
+                </div>
+              
+             </div>
+
+            {/* <header><p>johnny crisp</p><GiDuck /><p>frontend dev</p></header> */} 
+            {/* <section className="home__lower">
             <div className="home__desc x">
             <div className="y">
               <GiStarShuriken />
@@ -110,7 +121,7 @@ useEffect(()=> {
               <p>NOW MAKING VERY NICE WEBSITES</p>
               </div>
             </div>
-            </section>
+            </section> */}
           </div>
     </div>
     <Footer />
