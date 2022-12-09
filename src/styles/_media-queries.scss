@@ -78,6 +78,38 @@
         nav.navbar {
             display: none;
         }
+
+
+.nav__wrapper {
+    background-color: $color-dark;
+
+
+    &.display {
+        background-color: $color-dark;
+    }
+}
+
+
+ul {
+
+
+    span {
+        font-size: .7rem;
+        color: $color-light;
+
+        &.menu__item-expanded {
+            color: $color-light;
+        }
+    }
+
+    li {
+
+        a,
+        a.menu__item-expanded {
+            color: $color-light;
+        }
+    }
+}
         
             // center-nav
         

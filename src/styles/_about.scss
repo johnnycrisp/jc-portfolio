@@ -2,32 +2,41 @@
     background: $color-red;
 }
 
-.nav__wrapper {
-    background-color: $color-dark;
+.about__wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 1rem;
 
+    section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 1.5rem 0;
+        border-bottom: 1px solid $color-dark;
+    }
 
-    &.display {
-        background-color: $color-dark;
+    .about__image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: .8rem;
+
+        .gatsby-image-wrapper {
+            width: 100%;
+        }
+
+    }
+
+    .about__text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        p {
+            text-align: center;
+            margin: 0;
+        }
     }
 }
- 
-
-ul {
-
-
-     span {
-         font-size: .7rem;
-         color: $color-light;
-
-         &.menu__item-expanded {
-             color: $color-light;
-         }
-     }
-
-    li {
-        a, a.menu__item-expanded {
-         color: $color-light;
-     }
-    }
- }
- 
