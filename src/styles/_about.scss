@@ -42,3 +42,21 @@
         }
     }
 }
+
+.about__section {
+    display: flex;
+    gap: 1rem;
+    padding-top: 1rem;
+}
+
+.about__section-inner {
+        .tech__wrapper {
+            display: flex;
+            gap:1rem;
+        }
+
+        img {
+            width: 100%;
+            align-self: center;
+        }
+}
