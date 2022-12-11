@@ -207,7 +207,7 @@ ul {
                 grid-template-columns: 1fr 1fr 1fr;
                 align-items: center;
                 justify-content: space-around;
-                background: $color-yellow-dark;
+                // background: $color-yellow-dark;
                 gap: .5rem;
 
                 .image__wrapper-home, .home__image {
@@ -331,6 +331,8 @@ ul {
 
                  .work__wrapper-hero {
                      background-color: $color-blue-light;
+                     border-right: .5px solid $color-dark;
+                     border-bottom: .5px solid $color-dark;
                      height: calc(100vh - 160px);
                      display: grid;
                      grid-template-columns: 1fr 2fr;
@@ -347,7 +349,7 @@ ul {
                                  justify-content: center;
                                  align-items: center;
                                  padding-bottom: 2rem;
-                                 background: $color-yellow-light;
+                                //  background: $color-yellow-light;
         
                                  .project__image {
                                      width: 600px;

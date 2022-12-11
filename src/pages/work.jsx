@@ -8,10 +8,20 @@ import {Button} from 'react-bootstrap'
 
 const Work = ({data}) => {
     const components = data.work.components
-    console.log('work', components)
+    console.log('work', components.flat())
 
 
 const [ball, setBall] = useState(true)
+
+const [project, setProject] = useState(0)
+
+// const changeProject = (delta) => {
+
+//   if(delta === 1 ) { 
+//     setProject(project += 1) } else {
+//       setProject(project -= 1)
+//     }
+// }
 
 const handleBall = () => {
   if (ball) {
@@ -90,8 +100,8 @@ useEffect(()=> {
             <li>obligatory to-do list</li>
           </ul> */}
           <div className="project__text">
-              <h2>{components[0].projectTitle}</h2>
-              <p>{components[0].projectText}</p>
+              <h2>{components[project].projectTitle}</h2>
+              <p>{components[project].projectText}</p>
               <div>
                   <Link className="button__project">Live Site</Link>
                   <Link className="button__project">Github</Link>
@@ -99,11 +109,13 @@ useEffect(()=> {
         </div>
       </div>
     <div className="project__wrapper-featured">
-      <div className="project__image">
+      <Button disabled = {project === 0 && true} onClick={()=> setProject( project - 1)}>Prev</Button>
+        <div className="project__image">
             <div>
-                <GatsbyImage image={getImage(components[0].projectImage)} alt="ok"/>
+                <GatsbyImage image={getImage(components[project].projectImage)} alt="ok"/>
             </div>
         </div>
+      <Button disabled = {project === components.length -1 && true} onClick={()=> setProject(project + 1)}>Next</Button>
         </div> 
     </div>
     <div className="work__wrapper">

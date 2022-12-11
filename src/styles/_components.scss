@@ -283,6 +283,7 @@ footer {
             justify-content: center;
             align-items: center;
             padding: 2rem;
+            border-bottom: .5px solid $color-dark;
             background: $color-yellow-light;
 
             .gatsby-image-wrapper {
