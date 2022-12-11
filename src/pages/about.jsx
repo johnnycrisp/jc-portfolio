@@ -77,12 +77,12 @@ useEffect(()=> {
     <div className="about__wrapper">
         <section className="about__intro">
             <div className="about__text">
-                <p>Hi, I'm Johnny 👋. After 6+ years as a SaaS copywriter, I'm now focussed on creating very nice Jamstack websites. Based in Barcelona / London.</p>
+                <p>Hi, I'm Johnny 👋. After 6+ years as a SaaS copywriter, I now create very nice JAMSTACK websites. Based in Barcelona / London.</p>
             </div>
         </section>
         <section className="about__section">
             <div className="about__section-inner">
-                <h4>Experience</h4>
+                <h4>EXPERIENCE</h4>
                 <ul>
                     <li>Chessable</li>
                     <li>Media Interactiva</li>
@@ -97,9 +97,9 @@ useEffect(()=> {
                 <img src={snoopy} alt=''/>
             </div>
             <div className="about__section-inner">
-            <h4>Tech</h4>
+            <h4>SKILLSET</h4>
             <div className="tech__wrapper">
-                <p>React, Gatsby, DatoCMS, Graphql, Netlify, Saas, Figma, Bootstrap, Jira, Git...</p>
+                <p>React, Gatsby, DatoCMS, Graphql, Netlify, SCSS, Figma, Bootstrap, Jira, Git...</p>
                 </div>
             </div>
         </section>

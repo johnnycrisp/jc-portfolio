@@ -179,8 +179,20 @@ footer {
     align-items: center;
     justify-content: flex-end;
 
+    svg {
+            height: 2em;
+            width: 2em;
+        }
+
+    a + a {
+        margin-left: .5rem;
+        height: 1rem;
+
+    }
+
     p.footer__copy {
         font-size: 12px;
+        margin-bottom: .5rem;
     }
 }
 
@@ -267,13 +279,6 @@ footer {
         margin-bottom: 1.5rem
     }
 
-    .project__image, .gatsby-image-wrapper {
-        display: flex;
-        align-self: center;
-        justify-self: center;
-        margin-bottom: 1rem;
-    }
-
         
 }
 
@@ -285,6 +290,13 @@ footer {
             padding: 2rem;
             border-bottom: .5px solid $color-dark;
             background: $color-yellow-light;
+
+            .project__image {
+                    display: flex;
+                    flex-direction: column;
+                    align-self: center;
+                    justify-self: center;
+                }
 
             .gatsby-image-wrapper {
                 width: 100%;

@@ -109,13 +109,15 @@ useEffect(()=> {
         </div>
       </div>
     <div className="project__wrapper-featured">
-      <Button disabled = {project === 0 && true} onClick={()=> setProject( project - 1)}>Prev</Button>
+      
         <div className="project__image">
+        <button className="align-self-start mb-3 button__project-left" disabled = {project === 0 && true} onClick={()=> setProject( project - 1)}>Previous</button>
             <div>
                 <GatsbyImage image={getImage(components[project].projectImage)} alt="ok"/>
             </div>
+            <button className="align-self-end mt-3 button__project" disabled = {project === components.length -1 && true} onClick={()=> setProject(project + 1)}>Next</button>
         </div>
-      <Button disabled = {project === components.length -1 && true} onClick={()=> setProject(project + 1)}>Next</Button>
+      
         </div> 
     </div>
     <div className="work__wrapper">

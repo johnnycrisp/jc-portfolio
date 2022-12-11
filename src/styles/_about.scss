@@ -10,11 +10,15 @@
     section.about__intro {
         display: flex;
         flex-direction: column;
-        align-items: center;
         justify-content: center;
         padding: 1.5rem 0;
         border-bottom: 1px solid $color-dark;
         border-top: 1px solid $color-dark;
+
+        .about__text {
+            max-width: 950px;
+            text-align: left;
+        }
     }
 
     .about__image {
@@ -37,7 +41,7 @@
 
         p {
             // text-align: center;
-            font-size: 2rem;
+            font-size: 2.2rem;
             margin: 0;
         }
     }
@@ -46,13 +50,19 @@
 .about__section {
     display: flex;
     gap: 1rem;
-    padding-top: 1rem;
+    padding: 1.5rem 0;
+    border-bottom: .5px solid $color-dark;
 }
 
 .about__section-inner {
+
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
         .tech__wrapper {
             display: flex;
-            gap:1rem;
+            gap: 1rem;
         }
 
         img {

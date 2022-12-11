@@ -9,6 +9,7 @@ import Nav from '../components/Nav'
 import OffcanvasNav from '../components/OffcanvasNav'
 // import Seo from '../components/Seo'
 import RunningGif from '../assets/images/running.gif'
+import Layout from '../components/Layout'
 
 
 
@@ -72,11 +73,12 @@ useEffect(()=> {
   return (
     <>
     {/* <Seo title="Work" /> */}
+  
+  <Layout>
   <div id="cursor"></div>
   <div id="cursor-border"></div> 
-  <div className="site-wrapper">
-  <OffcanvasNav />
-    <Nav />
+  {/* <OffcanvasNav />
+    <Nav /> */}
   <div className="x">
               <img className="y" src={RunningGif} alt="running man" />
             </div>
@@ -123,8 +125,8 @@ useEffect(()=> {
             </div>
             </section> */}
           </div>
-    </div>
-    <Footer />
+    </Layout>
+    {/* <Footer /> */}
     </>
   )
 }

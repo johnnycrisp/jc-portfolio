@@ -34,7 +34,7 @@ ul {
 }
 
 .site-wrapper {
-    height: calc(100vh - 80px);
+    min-height: calc(100vh - 80px);
     display: flex;
     flex-direction: column;
     
@@ -88,6 +88,12 @@ a.button__project + a.button__project {
    padding: 3px;
 //    border-bottom: 1px solid $color-dark;
    cursor: pointer;
+   background: none;
+
+&[disabled] {
+        opacity: 0;
+        cursor: auto;
+    }
 
     &::after {
         display: inline-block;
@@ -116,6 +122,12 @@ a.button__project + a.button__project {
     padding: 3px;
     //    border-bottom: 1px solid $color-dark;
     cursor: pointer;
+    background: none;
+
+    &[disabled] {
+        opacity: 0;
+        cursor: auto;
+    }
 
     &::before {
         display: inline-block;
