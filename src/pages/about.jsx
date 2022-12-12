@@ -4,7 +4,6 @@ import Layout from '../components/Layout'
 import Seo from '../components/Seo'
 import { StaticImage } from 'gatsby-plugin-image'
 import snoopy from '../assets/images/snoopy.jpg'
-import Skillset from '../components/skillset/Skillset'
 import Experience from '../components/experience/Experience'
 
 const About = () => {
@@ -65,9 +64,10 @@ useEffect(()=> {
   return (
     
     <Layout>
-    {/* <Seo title="About" /> */}
-   <div id="cursor"></div>
+        <div id="cursor"></div>
     <div id="cursor-border"></div>
+    {/* <Seo title="About" /> */}
+   
     {/* <h1>
         <span className="letter">A</span>
         <span className="letter">b</span>
@@ -84,6 +84,7 @@ useEffect(()=> {
         </section>
         {/* <Skillset /> */}
         <section className="about__section">
+    
         
             {/* <div className="about__section-inner">
                 <h4>EXPERIENCE</h4>
@@ -110,7 +111,7 @@ useEffect(()=> {
             
         </section>
        
-              <Link className="button__project contact__button">PLEASE EMAIL ME</Link>
+              <Link className="button__project contact__button">EMAIL ME</Link>
     </div>
   </Layout>
   )

@@ -84,7 +84,9 @@ const Experience = () => {
 {/* // EXPERIENCE //  */}
             <div className="about__experience">
                 <h4>EXPERIENCE</h4>
-                <p className="about__text">I've had a few job titles over the years, including journalist, translator, UX copywriter, and technical writer. For the past 6+ years, I've been working hand-in-hand with executive, marketing, and dev teams to create seamless digital experiences. </p>
+                <p className="about__text">I've had a few job titles over the years, including journalist, translator, UX copywriter, and technical writer. For the past 6+ years, I've been working hand-in-hand with executive, marketing, and dev teams to create seamless digital experiences. <br /><br />
+                Formerly found at Chessable, Media Interactiva, NPAW, Spaceboost, Perdiz Magazine, and more!
+              </p>
                   <div className="about__buttons">
                     <Link className="button__project">LinkedIn</Link>
                     <Link className="button__project">Download CV</Link>

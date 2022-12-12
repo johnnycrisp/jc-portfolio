@@ -5,17 +5,17 @@
 .about__wrapper {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    padding: 1rem;
+    // justify-content: space-evenly;
+    padding: 0 1rem;
 
     section.about__intro {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        margin-top: 1rem;
+        margin-top: .3rem;
         padding: 1.5rem 1rem;
         border-bottom: 1px solid $color-dark;
-        border-top: 1px solid $color-dark;
+        // border-top: 1px solid $color-dark;
 
         .about__text {
             max-width: 950px;
