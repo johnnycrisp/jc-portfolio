@@ -4,6 +4,8 @@ import Layout from '../components/Layout'
 import Seo from '../components/Seo'
 import { StaticImage } from 'gatsby-plugin-image'
 import snoopy from '../assets/images/snoopy.jpg'
+import Skillset from '../components/skillset/Skillset'
+import Experience from '../components/experience/Experience'
 
 const About = () => {
 
@@ -80,8 +82,10 @@ useEffect(()=> {
                 <p>Hi, I'm Johnny 👋. After 6+ years as a SaaS copywriter, I now create very nice JAMSTACK websites. Based in Barcelona / London.</p>
             </div>
         </section>
+        <Skillset />
         <section className="about__section">
-            <div className="about__section-inner">
+        
+            {/* <div className="about__section-inner">
                 <h4>EXPERIENCE</h4>
                 <ul>
                     <li>Chessable</li>
@@ -91,18 +95,20 @@ useEffect(()=> {
                     <li>Perdiz</li>
                     <li>And more...</li>
                 </ul>
-            </div>
-            <div className="about__section-inner">
-                {/* <h4>Contact</h4> */}
+            </div> */}
+            {/* <div className="about__section-inner">
+                <h4>Contact</h4>
                 <img src={snoopy} alt=''/>
-            </div>
-            <div className="about__section-inner">
+            </div> */}
+            {/* <div className="about__section-inner">
             <h4>SKILLSET</h4>
             <div className="tech__wrapper">
                 <p>React, Gatsby, DatoCMS, Graphql, Netlify, SCSS, Figma, Bootstrap, Jira, Git...</p>
                 </div>
-            </div>
+            </div> */}
+            <Experience />
         </section>
+        
     </div>
   </Layout>
   )
