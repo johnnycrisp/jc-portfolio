@@ -1,0 +1,105 @@
+ $color-blue-dark: #417CF2;
+ $color-blue-light: #6393F2;
+ $color-yellow-light: #F2E963;
+ $color-yellow-dark: #D9C359;
+ $color-red: #F26363;
+ $color-light: rgb(247, 247, 240);
+ $color-dark: black;
+
+ $font-secondary: 'roxborough-cf', serif;
+
+//  @font-face {
+//      font-family: $font-primary;
+//      font-style: normal;
+//      font-weight: normal;
+//      src: url('../assets/fonts/Roobert-Regular.ttf') format('truetype');
+//  }
+
+ #experience {
+    max-width: 1400px;
+    margin-top: 2rem;
+    align-self: flex-start;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    width: 100%;
+     // background: $color-blue-dark ;
+ }
+
+ //  h2 {
+ //         text-align: center;
+ //         margin: 2rem;
+ //     }
+ .about__skillset, .about__experience {
+    max-width: 700px;
+     display: flex;
+     flex-direction: column;
+     align-items: flex-start;
+     justify-content: flex-start;
+     border-radius: .5rem;
+    //  justify-content: flex-start;
+     padding: 1rem;
+     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+     p.skillset__text, p.about__text {
+         margin: 1rem 0 0;
+         text-align: left;
+     }
+ } 
+ 
+
+ .about__buttons {
+     display: flex;
+     align-items: center;
+     margin-top: 2rem;
+ }
+
+ .experience__content {
+     display: flex;
+     flex-wrap: wrap;
+     width: 100%;
+     gap: 1rem;
+     align-items: center;
+     justify-content: flex-start;
+     margin: 2rem 0;
+ }
+
+ .experience__details {
+     display: flex;
+     align-items: center;
+     gap: .5rem;
+
+     p {
+        margin-bottom: 0;
+     }
+
+     svg {
+         margin: 0;
+     }
+ }
+
+ .experience__details-icon {
+     color: $color-dark;
+     margin-top: 6px;
+
+ }
+
+ .contact__button {
+    margin-top: 2rem;
+    font-size: 4rem;
+
+    span {font-family: $font-secondary;
+        font-style: italic;}
+
+        
+    
+ }
+
+ @media screen and (min-width: 850px) {
+     #experience {
+
+         display: grid;
+         grid-gap: 1.5rem;
+         grid-template-columns: 1fr 1fr;
+
+     }
+ }

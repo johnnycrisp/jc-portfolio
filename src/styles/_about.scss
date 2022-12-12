@@ -3,15 +3,17 @@
 }
 
 .about__wrapper {
-    display: grid;
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
     padding: 1rem;
 
     section.about__intro {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        padding: 1.5rem 0;
+        margin-top: 1rem;
+        padding: 1.5rem 1rem;
         border-bottom: 1px solid $color-dark;
         border-top: 1px solid $color-dark;
 
@@ -49,9 +51,10 @@
 
 .about__section {
     display: flex;
+    // align-self: center;
     gap: 1rem;
-    padding: 1.5rem 0;
-    border-bottom: .5px solid $color-dark;
+    // padding: 1.5rem 0;
+    // border-bottom: .5px solid $color-dark;
 }
 
 .about__section-inner {

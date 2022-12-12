@@ -82,7 +82,7 @@ useEffect(()=> {
                 <p>Hi, I'm Johnny 👋. After 6+ years as a SaaS copywriter, I now create very nice JAMSTACK websites. Based in Barcelona / London.</p>
             </div>
         </section>
-        <Skillset />
+        {/* <Skillset /> */}
         <section className="about__section">
         
             {/* <div className="about__section-inner">
@@ -107,8 +107,10 @@ useEffect(()=> {
                 </div>
             </div> */}
             <Experience />
+            
         </section>
-        
+       
+              <Link className="button__project contact__button">PLEASE EMAIL ME</Link>
     </div>
   </Layout>
   )

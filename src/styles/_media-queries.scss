@@ -10,7 +10,21 @@
                 font-size: 5rem;
     
             }
+
+                        // .home__wrapper {
+                        //     display: flex;
+                        //     flex-direction: column;
+                        //     align-items: center;
+                        //     justify-content: center;
+                        //     height: calc(100vh - 380px);
+                        // }
     
+        }
+
+        .experience__container {
+         
+            grid-template-columns: 1fr 1fr;
+            
         }
 
 .image__wrapper-home {
@@ -72,7 +86,7 @@
   
     .hello__wrapper {
     
-            margin-bottom: 100px;
+            // margin-bottom: 100px;
     
         }
 
