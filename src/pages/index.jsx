@@ -7,7 +7,7 @@ import Footer from '../components/Footer'
 // import Layout from '../components/Layout'
 import Nav from '../components/Nav'
 import OffcanvasNav from '../components/OffcanvasNav'
-// import Seo from '../components/Seo'
+import Seo from '../components/Seo'
 import RunningGif from '../assets/images/running.gif'
 import Layout from '../components/Layout'
 
@@ -75,6 +75,7 @@ useEffect(()=> {
     {/* <Seo title="Work" /> */}
   
   <Layout>
+  <Seo title="Home"/>
   <div id="cursor"></div>
   <div id="cursor-border"></div> 
   {/* <OffcanvasNav />

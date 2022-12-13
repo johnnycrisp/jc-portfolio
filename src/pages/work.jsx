@@ -1,10 +1,11 @@
 import React, {useState, useEffect} from 'react'
 import { graphql, Link } from 'gatsby'
 import Layout from '../components/Layout'
-// import Seo from '../components/Seo'
+import Seo from '../components/Seo'
 import ComponentSelector from '../components/ComponentSelector'
 import { GatsbyImage, getImage, StaticImage } from 'gatsby-plugin-image'
 import {Button} from 'react-bootstrap'
+import SEO from '../components/Seo'
 
 const Work = ({data}) => {
     const components = data.work.components
@@ -76,6 +77,7 @@ useEffect(()=> {
 
   return (
    <Layout>
+   <Seo title="Work"/>
   <div id="cursor"></div>
   <div id="cursor-border"></div>
     {/* <Seo title="Work" /> */}

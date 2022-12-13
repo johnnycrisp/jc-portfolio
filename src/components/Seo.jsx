@@ -1,75 +1,40 @@
-/**
- * SEO component that queries for data with
- *  Gatsby's useStaticQuery React hook
- *
- * See: https://www.gatsbyjs.com/docs/use-static-query/
- */
+import { useStaticQuery, graphql } from 'gatsby';
+import React from 'react';
+import { Helmet } from 'react-helmet';
 
-import * as React from "react"
-import { Helmet } from "react-helmet"
-import { useStaticQuery, graphql } from "gatsby"
-
-function Seo({ description, lang, meta, title }) {
-  const { site } = useStaticQuery(
-    graphql`
-      query {
-        site {
-          siteMetadata {
-            title
-            description
-            author
-          }
+export default function SEO({ location, children, description, title, image }) {
+  const { site } = useStaticQuery(graphql`
+    query {
+      site {
+        siteMetadata {
+          title
+          description
         }
       }
-    `
-  )
-
-  const metaDescription = description || site.siteMetadata.description
-  const defaultTitle = site.siteMetadata?.title
-
+    }
+  `);
   return (
-    <Helmet
-      htmlAttributes={{
-        lang,
-      }}
-      title={title}
-      titleTemplate={defaultTitle ? `%s / ${defaultTitle}` : null}
-      meta={[
-        {
-          name: `description`,
-          content: metaDescription,
-        },
-        {
-          property: `og:title`,
-          content: title,
-        },
-        {
-          property: `og:description`,
-          content: metaDescription,
-        },
-        {
-          property: `og:type`,
-          content: `website`,
-        },
-        {
-          name: `twitter:card`,
-          content: `summary`,
-        },
-        {
-          name: `twitter:creator`,
-          content: site.siteMetadata?.author || ``,
-        },
-        {
-          name: `twitter:title`,
-          content: title,
-        },
-        {
-          name: `twitter:description`,
-          content: metaDescription,
-        },
-      ].concat(meta)}
-    />
-  )
+    <Helmet titleTemplate={`%s - ${site.siteMetadata.title}`}>
+      <html lang="en" />
+      <title>{title}</title>
+      {/* Favicons */}
+      <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+      <link rel="alternate icon" href="/favicon.ico" />
+      {/* Metatags */}
+      <meta name="viewport" content="width-device-width, initial-scale=1.0" />
+      <meta charSet="utf-8" />
+      <meta name="description" content={site.siteMetadata.description} />
+      {/* Open Graph */}
+      {location && <meta property="og:url" content={location.href} />}
+      <meta property="og:image" content={image || '/logo.svg'} />
+      <meta property="og:title" content={title} key="ogtitle" />
+      <meta
+        property="og:site_name"
+        content={site.siteMetadata.title}
+        key="ogsitename"
+      />
+      <meta property="og:desription" content={description} key="ogdesc" />
+      {children}
+    </Helmet>
+  );
 }
-
-export default Seo

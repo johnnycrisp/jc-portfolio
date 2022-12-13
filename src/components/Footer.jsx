@@ -6,9 +6,10 @@ const Footer = () => (
   <footer>
     {/* <p className="footer__copy mt-5">&copy; Johnny {new Date().getFullYear()}</p> */}
     <div>
-    <Link><AiFillMail /></Link> 
-    <Link><AiFillLinkedin /></Link>
-    <Link><AiFillGithub /></Link>
+    <a href="mailto:johnnycrisp2@gmail.com?subject=Hi!&body=Nice%20website%20Johnny,"
+                target="_blank"><AiFillMail /></a> 
+    <a href="https://www.linkedin.com/in/johnny-c-a5737a14b/" target="_blank"><AiFillLinkedin /></a>
+    <a href="https://github.com/johnnycrisp" target="_blank"><AiFillGithub /></a>
     </div>
     {/* <Link to="">Back to top</Link> */}
   </footer>

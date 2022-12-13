@@ -67,6 +67,7 @@ useEffect(()=> {
   return (
     
     <Layout>
+    <Seo title="About"/>
         <div id="cursor"></div>
     <div id="cursor-border"></div>
     {/* <Seo title="About" /> */}
@@ -114,8 +115,12 @@ useEffect(()=> {
             
         </section>
        <div className="contact__section">
-<Link className="button__project contact__button"><AiFillMail/>EMAIL ME</Link><Link className="button__project contact__button"><AiFillLinkedin/>LINKEDIN</Link><Link className="button__project contact__button"><AiFillMail/>EMAIL ME</Link><Link className="button__project contact__button"><AiFillGithub/>GITHUB</Link>
-<Link className="button__project contact__button"><AiFillMail/>EMAIL ME</Link><Link className="button__project contact__button"><SiLichess/>LET'S PLAY CHESS</Link>
+<a className="button__project contact__button" href="mailto:johnnycrisp2@gmail.com?subject=Hi!&body=Nice%20website%20Johnny,"
+                target="_blank"><AiFillMail/>EMAIL ME</a><a className="button__project contact__button" href="https://www.linkedin.com/in/johnny-c-a5737a14b/" target="_blank"><AiFillLinkedin/>LINKEDIN</a><a className="button__project contact__button" href="mailto:johnnycrisp2@gmail.com?subject=Hi!&body=Nice%20website%20Johnny,"
+                target="_blank"><AiFillMail/>EMAIL ME</a><a className="button__project contact__button" href="https://github.com/johnnycrisp" target="_blank"><AiFillGithub/>GITHUB</a>
+<a className="button__project contact__button" href="mailto:johnnycrisp2@gmail.com?subject=Hi!&body=Nice%20website%20Johnny,"
+                target="_blank"><AiFillMail/>EMAIL ME</a><a className="button__project contact__button" href="https://lichess.org/@/johnnnnnny"
+                target="_blank"><SiLichess/>LET'S PLAY CHESS</a>
        </div>
               
     </div>

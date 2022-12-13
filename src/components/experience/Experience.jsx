@@ -2,6 +2,7 @@ import React from 'react'
 import './experience.scss'
 import {BsPatchCheckFill} from 'react-icons/bs'
 import {Link} from 'gatsby'
+import CV from '../../assets/files/j-crisp-cv-2022.pdf'
 
 const Experience = () => {
   return (
@@ -16,7 +17,7 @@ const Experience = () => {
                 <article className="experience__details">
                 <BsPatchCheckFill className="experience__details-icon" />
                 <div>
-                <p> REACT </p>
+                <p> REACT.JS </p>
                 </div>
                 </article>
 
@@ -72,7 +73,7 @@ const Experience = () => {
                 <article className="experience__details">
                 <BsPatchCheckFill className="experience__details-icon" />
                 <div>
-                <p>JIRA/AGILE</p>
+                <p>JIRA / AGILE</p>
                 </div>
                 </article>
         </div>
@@ -88,8 +89,8 @@ const Experience = () => {
                 Formerly found at Chessable, Media Interactiva, NPAW, Spaceboost, Perdiz Magazine, and more!
               </p>
                   <div className="about__buttons">
-                    <Link className="button__project">LinkedIn</Link>
-                    <Link className="button__project">Download CV</Link>
+                    <a className="button__project" href="https://www.linkedin.com/in/johnny-c-a5737a14b/" target="_blank">LinkedIn</a>
+                    <a href={CV} target="_blank" className="button__project">Download CV</a>
                   </div>
             </div>
 
