@@ -189,10 +189,15 @@ footer {
     svg {
             height: 2em;
             width: 2em;
+            cursor: pointer;
+
+            &:hover {
+                transform: scale(1.5)
+            }
         }
 
     a + a {
-        margin-left: .5rem;
+        margin-left: 1rem;
         height: 1rem;
 
     }

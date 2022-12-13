@@ -5,6 +5,9 @@ import Seo from '../components/Seo'
 import { StaticImage } from 'gatsby-plugin-image'
 import snoopy from '../assets/images/snoopy.jpg'
 import Experience from '../components/experience/Experience'
+import {AiFillMail, AiFillLinkedin, AiFillGithub} from 'react-icons/ai'
+import {SiLichess} from 'react-icons/si'
+
 
 const About = () => {
 
@@ -110,8 +113,11 @@ useEffect(()=> {
             <Experience />
             
         </section>
-       
-              <Link className="button__project contact__button">EMAIL ME</Link>
+       <div className="contact__section">
+<Link className="button__project contact__button"><AiFillMail/>EMAIL ME</Link><Link className="button__project contact__button"><AiFillLinkedin/>LINKEDIN</Link><Link className="button__project contact__button"><AiFillMail/>EMAIL ME</Link><Link className="button__project contact__button"><AiFillGithub/>GITHUB</Link>
+<Link className="button__project contact__button"><AiFillMail/>EMAIL ME</Link><Link className="button__project contact__button"><SiLichess/>LET'S PLAY CHESS</Link>
+       </div>
+              
     </div>
   </Layout>
   )

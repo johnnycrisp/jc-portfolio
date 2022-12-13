@@ -85,9 +85,21 @@
 
  .contact__button {
     margin-top: 2rem;
+    // display: flex;
+    // align-items: center;
+    // text-decoration: underline;
     // padding-top: 1rem;
     font-size: 4rem;
     // border-top: 0.5px solid black;
+
+    svg {
+        margin-bottom: .7rem;
+        margin-right: .5rem;
+    }
+
+    &:hover {
+        text-decoration: underline;
+    }
 
     span {font-family: $font-secondary;
         font-style: italic;}

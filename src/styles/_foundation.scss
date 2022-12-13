@@ -48,6 +48,7 @@ body {
 
 a {
     color: $color-dark;
+    font-size: 18px;
     text-decoration: none;
     &:visited {
         color: $color-dark;
@@ -61,7 +62,7 @@ a {
 }
 
 p {
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 400;
     line-height: 1.2;
 }
@@ -105,7 +106,7 @@ a.button__project + a.button__project {
     }
 
     &:hover {
-
+        text-decoration: underline;
         &::after {
             transform: rotate(-38deg);
         }
@@ -138,6 +139,8 @@ a.button__project + a.button__project {
     }
 
     &:hover {
+
+        text-decoration: underline;
 
         &::before {
             transform: rotate(38deg);
