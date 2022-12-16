@@ -136,18 +136,23 @@ export default Work
 
 export const query = graphql`
   query WorkQuery {
-    work: datoCmsPage(pageSlug: { eq: "work" }) {
+  work: datoCmsPage(pageSlug: {eq: "work"}) {
     title
     pageSlug
     components {
-        componentId
-      projectTitle
+      componentId
       projectText
+      projectTitle
       projectImage {
-        gatsbyImageData(
-          placeholder: BLURRED
-          )
+        fluid(maxWidth: 600) {
+          base64
+          tracedSVG
+          width
+          height
+          src
+        }
+        gatsbyImageData(layout: CONSTRAINED)
       }
     }
-    }
-  }`
+  }
+}`
