@@ -106,7 +106,7 @@ a.button__project + a.button__project {
     }
 
     &:hover {
-        text-decoration: underline;
+        // text-decoration: underline;
         &::after {
             transform: rotate(-38deg);
         }
@@ -140,7 +140,7 @@ a.button__project + a.button__project {
 
     &:hover {
 
-        text-decoration: underline;
+        // text-decoration: underline;
 
         &::before {
             transform: rotate(38deg);

@@ -151,7 +151,7 @@ export const query = graphql`
           height
           src
         }
-        gatsbyImageData(layout: CONSTRAINED)
+        gatsbyImageData(placeholder: BLURRED)
       }
     }
   }
