@@ -7,6 +7,7 @@ import snoopy from '../assets/images/snoopy.jpg'
 import Experience from '../components/experience/Experience'
 import {AiFillMail, AiFillLinkedin, AiFillGithub} from 'react-icons/ai'
 import {SiLichess} from 'react-icons/si'
+import Testimonials from '../components/testimonials/Testimonials'
 
 
 const About = () => {
@@ -114,6 +115,7 @@ useEffect(()=> {
             <Experience />
             
         </section>
+        <Testimonials  />
        <div className="contact__section">
 <a className="button__project contact__button" href="mailto:johnnycrisp2@gmail.com?subject=Hi!&body=Nice%20website%20Johnny,"
                 target="_blank"><AiFillMail/>EMAIL ME</a><a className="button__project contact__button" href="https://www.linkedin.com/in/johnny-c-a5737a14b/" target="_blank"><AiFillLinkedin/>LINKEDIN</a><a className="button__project contact__button" href="mailto:johnnycrisp2@gmail.com?subject=Hi!&body=Nice%20website%20Johnny,"
