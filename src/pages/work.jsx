@@ -105,8 +105,8 @@ useEffect(()=> {
               <h2>{components[project].projectTitle}</h2>
               <p>{components[project].projectText}</p>
               <div>
-                  <Link className="button__project">Live Site</Link>
-                  <Link className="button__project">Github</Link>
+                  <a disabled = {components[project].liveSite === "" && true} href={components[project].liveSite} target ="_blank" className="button__project">Live Site</a>
+                  <a disabled = {components[project].github === "" && true} href={components[project].github} target ="_blank" className="button__project">Github</a>
               </div>
         </div>
       </div>
@@ -141,6 +141,8 @@ export const query = graphql`
     pageSlug
     components {
       componentId
+      liveSite
+      github
       projectText
       projectTitle
       projectImage {

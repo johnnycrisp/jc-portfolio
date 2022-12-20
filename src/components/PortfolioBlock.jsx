@@ -16,8 +16,8 @@ const PortfolioBlock = ({component, key}) => {
                 <h2>{component.projectTitle}</h2>
                 <p>{component.projectText}</p>
         <div>
-            <a className="button__project">Live Site</a>
-            <a className="button__project">Github</a>
+            <a disabled={component.liveSite === "" && true} href={component.liveSite} target ="_blank" className="button__project">Live Site</a>
+            <a disabled={component.github === "" && true} href={component.github} target ="_blank" className="button__project">Github</a>
         </div>
         </div> 
     </section>

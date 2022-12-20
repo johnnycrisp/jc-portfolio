@@ -1,5 +1,5 @@
 .container.testimonials__container {
-    // width: 40%;
+    width: 100%;
     padding-bottom: 4rem;
 }
 
@@ -26,13 +26,14 @@
 }
 
 .swiper {
-    margin-left: 2rem;
-    margin-right: 2rem;
+    // margin-left: 2rem;
+    // margin-right: 2rem;
     width: 100%;
+    max-width: none;
 }
 
 .swiper-slide {
-    width: 600px;
+    width: 100%;
 }
 
 .client__review {
@@ -49,4 +50,16 @@
 }
 .swiper-button-prev, .swiper-button-next {
     color: black;
+}
+
+@media screen and (min-width: 850px) {
+    .swiper-slide {
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .swiper-slide {
+        width: 33.3%;
+    }
 }
