@@ -1,12 +1,12 @@
 import { graphql, Link } from 'gatsby'
 // import { GatsbyImage, getImage, StaticImage } from 'gatsby-plugin-image'
 import React, { useEffect, useState } from 'react'
-import {GiStarShuriken, GiDuck} from 'react-icons/gi'
+// import {GiDuck} from 'react-icons/gi'
 // import ComponentSelector from '../components/ComponentSelector'
-import Footer from '../components/Footer'
+// import Footer from '../components/Footer'
 // import Layout from '../components/Layout'
 import Nav from '../components/Nav'
-import OffcanvasNav from '../components/OffcanvasNav'
+// import OffcanvasNav from '../components/OffcanvasNav'
 import Seo from '../components/Seo'
 import RunningGif from '../assets/images/running.gif'
 import Layout from '../components/Layout'
@@ -69,7 +69,7 @@ useEffect(()=> {
 )
 
     console.log('index', data)
-   const components = data?.datoCmsPage?.components
+  //  const components = data?.datoCmsPage?.components
   return (
     <>
     {/* <Seo title="Work" /> */}

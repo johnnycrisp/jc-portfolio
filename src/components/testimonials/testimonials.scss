@@ -3,6 +3,21 @@
     padding-bottom: 4rem;
 }
 
+#testimonials {
+    border-top: .5px solid black;
+    
+    h3 {
+    font-size: 1rem;
+    text-align: center;
+    padding: .8rem;
+    background: black;
+    color: white;
+    width: 130px;
+}
+}
+
+
+
 .client__avatar {
     width: 8rem;
     // height: 100%;
@@ -40,7 +55,7 @@
     
     font-weight: 300;
     display: block;
-    width: 60%;
+    width: 80%;
     margin: 0.8rem auto 0;
 }
 

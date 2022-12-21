@@ -84,11 +84,12 @@ useEffect(()=> {
     <div className="about__wrapper">
         <section className="about__intro">
             <div className="about__text">
-                <p>Hi, I'm Johnny 👋. After 6+ years as a SaaS copywriter, I now create very nice JAMSTACK websites. Based in Barcelona / London.</p>
+                <p>Hi, I'm Johnny 👋. After 6+ years as a SaaS copywriter, I'm now a React developer creating very nice Jamstack websites. Based in Barcelona / London.</p>
             </div>
         </section>
         {/* <Skillset /> */}
         <section className="about__section">
+        <h3>ABOUT</h3>
     
         
             {/* <div className="about__section-inner">
@@ -117,6 +118,7 @@ useEffect(()=> {
         </section>
         <Testimonials  />
        <div className="contact__section">
+       <h3>CONTACT</h3>
 <a className="button__project contact__button" href="mailto:johnnycrisp2@gmail.com?subject=Hi!&body=Nice%20website%20Johnny,"
                 target="_blank"><AiFillMail/>EMAIL ME</a><a className="button__project contact__button" href="https://www.linkedin.com/in/johnny-c-a5737a14b/" target="_blank"><AiFillLinkedin/>LINKEDIN</a><a className="button__project contact__button" href="mailto:johnnycrisp2@gmail.com?subject=Hi!&body=Nice%20website%20Johnny,"
                 target="_blank"><AiFillMail/>EMAIL ME</a><a className="button__project contact__button" href="https://github.com/johnnycrisp" target="_blank"><AiFillGithub/>GITHUB</a>

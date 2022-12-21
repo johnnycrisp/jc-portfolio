@@ -51,10 +51,20 @@
 
 .about__section {
     display: flex;
+    flex-direction: column;
     // align-self: center;
-    gap: 1rem;
+    // gap: 1rem;
     // padding: 1.5rem 0;
     // border-bottom: .5px solid $color-dark;
+
+    h3 {
+            font-size: 1rem;
+            text-align: center;
+            padding: .8rem;
+            background: black;
+            color: white;
+            width: 130px;
+        }
 }
 
 .about__section-inner {
@@ -75,6 +85,16 @@
 }
 
 .contact__section {
-    padding-top: 2rem;
+    // padding-top: 2rem;
     border-top: .5px solid $color-dark;
+
+    h3 {
+            font-size: 1rem;
+            text-align: center;
+            padding: .8rem;
+            background: black;
+            color: white;
+            width: 130px;
+        }
+    
 }

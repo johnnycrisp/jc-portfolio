@@ -17,7 +17,7 @@
 
  #experience {
     // max-width: 1400px;
-    margin-top: 2rem;
+    margin-top: .5rem;
     padding-bottom: 2rem;
     align-self: flex-start;
     display: grid;
@@ -40,7 +40,7 @@
      border-radius: .5rem;
     //  justify-content: flex-start;
      padding: 1rem;
-     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
      p.skillset__text, p.about__text {
          margin: 1rem 0 0;
          text-align: left;
