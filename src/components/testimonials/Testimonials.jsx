@@ -18,7 +18,7 @@ const tests = [
 
   {
     key: 1,
-    name: 'Client Name',
+    name: 'Employer Name',
     quote: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi quam, non deserunt dolores dicta dolore beatae ea eveniet enim pariatur!',
     avatar: IMG
   },
