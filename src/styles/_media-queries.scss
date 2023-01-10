@@ -351,7 +351,7 @@ ul {
         //     }
 
                  .work__wrapper-hero {
-                     background-color: $color-blue-light;
+                    //  background-color: $color-blue-light;
                      border-right: .5px solid $color-dark;
                      border-bottom: .5px solid $color-dark;
                      height: calc(100vh - 160px);
@@ -370,6 +370,7 @@ ul {
                                  justify-content: center;
                                  align-items: center;
                                  padding-bottom: 2rem;
+                                 border-left: 1px solid black;
                                 //  background: $color-yellow-light;
         
                                  .project__image {

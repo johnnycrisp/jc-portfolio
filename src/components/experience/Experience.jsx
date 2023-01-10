@@ -2,7 +2,7 @@ import React from 'react'
 import './experience.scss'
 import {BsPatchCheckFill} from 'react-icons/bs'
 import {Link} from 'gatsby'
-import CV from '../../assets/files/j-crisp-cv-2022.pdf'
+import CV from '../../assets/files/j-crisp-cv-2023.pdf'
 
 const Experience = () => {
   return (
