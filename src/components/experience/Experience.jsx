@@ -11,7 +11,7 @@ const Experience = () => {
 {/* // SKILLSET //  */}
     <div className="about__skillset">
             <h4>SKILLSET & EDUCATION</h4>
-            <p className="skillset__text">I am a graduate frontend web developer (Treehouse Techdegree) currently delivering Jamstack websites to clients while also learning an MERN stack through the University of Helsinki's Full Stack Open programme. Below is a non-exhaustive list of my current frontend toolkit.</p>
+            <p className="skillset__text">I am a frontend web developer (and Treehouse Techdegree graduate) currently delivering Jamstack websites to clients while also learning an MERN stack through the University of Helsinki's Full Stack Open programme. Below is a non-exhaustive list of my current frontend toolkit.</p>
 
         <div className="experience__content">
                 <article className="experience__details">
