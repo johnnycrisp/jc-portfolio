@@ -122,10 +122,11 @@ useEffect(()=> {
       
         </div> 
     </div>
-    <div className="work__wrapper">
-    <ComponentSelector components={components} />
+    <div className="work__wrapper-wrapper">
+      <div className="work__wrapper">
+        <ComponentSelector components={components} />
+      </div>
     </div>
-    
   </Layout>
   )
 }

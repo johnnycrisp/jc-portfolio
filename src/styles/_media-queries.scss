@@ -355,7 +355,7 @@ ul {
                      border-right: .5px solid $color-dark;
                      border-bottom: .5px solid $color-dark;
                      height: calc(100vh - 160px);
-                     display: grid;
+                     display: none;
                      grid-template-columns: 1fr 2fr;
         
                      p {
@@ -429,8 +429,20 @@ ul {
         
                              }
 
+                             .work__wrapper-wrapper {
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: center;
+                                align-items: center;
+                             }
+
                 .work__wrapper {
-                    display: none;
+                    
+                    margin-top: 2rem;
+                    max-width: 75%;
+                    align-items: center;
+                    display: grid;
+                    grid-template-columns: 1fr;
                 }
 }
 
