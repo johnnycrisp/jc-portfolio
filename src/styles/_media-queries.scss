@@ -439,14 +439,18 @@ ul {
                 .work__wrapper {
                     
                     margin-top: 2rem;
-                    max-width: 75%;
+                    max-width: 70%;
                     align-items: center;
                     display: grid;
                     grid-template-columns: 1fr;
                 }
 }
 
-@media screen and (min-width: 1580px) { 
+@media screen and (min-width: 1480px) { 
+
+    .work__wrapper {
+        max-width: 60%;
+    }
 
     .project__wrapper-featured {
 
