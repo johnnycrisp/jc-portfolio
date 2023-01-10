@@ -114,10 +114,10 @@ useEffect(()=> {
       
         <div className="project__image">
         <button className="align-self-start mb-3 button__project-left" disabled = {project === 0 && true} onClick={()=> setProject( project - 1)}>Previous</button>
-            <div>
-                <GatsbyImage image={getImage(components[project].projectImage)} alt="ok"/>
-            </div>
-            <button className="align-self-end mt-3 button__project" disabled = {project === components.length -1 && true} onClick={()=> setProject(project + 1)}>Next</button>
+  
+        <GatsbyImage image={getImage(components[project].projectImage)} alt="ok"/>
+    
+        <button className="align-self-end mt-3 button__project" disabled = {project === components.length -1 && true} onClick={()=> setProject(project + 1)}>Next</button>
         </div>
       
         </div> 
