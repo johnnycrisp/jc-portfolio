@@ -146,6 +146,9 @@ export const query = graphql`
       github
       projectText
       projectTitle
+      projectGif {
+        gatsbyImageData(placeholder: BLURRED)
+      }
       projectImage {
         fluid(maxWidth: 600) {
           base64

@@ -8,8 +8,11 @@ const PortfolioBlock = ({component, key}) => {
     <section className="project__wrapper" key={key}>
         <div className="project__image">
             <div>
-                <GatsbyImage image={getImage(component.projectImage)} alt={key}/>
+                <GatsbyImage className="work__image" image={getImage(component.projectImage)} alt={component.projectTitle}/>
             </div>
+
+                <GatsbyImage className="work__gif" image={getImage(component.projectGif)} alt={component.projectTitle}/>
+
         </div>
         <div className="project__text">
             

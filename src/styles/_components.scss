@@ -299,6 +299,10 @@ footer {
         
 }
 
+
+.work__gif {
+    display: none;
+}
 .project__wrapper-featured {
             display: flex;
             flex-direction: column;
@@ -314,6 +318,7 @@ footer {
                     flex-direction: column;
                     align-self: center;
                     justify-self: center;
+
                 }
 
             .gatsby-image-wrapper {

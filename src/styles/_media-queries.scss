@@ -54,6 +54,14 @@
                 align-items: center;
                 justify-content: center;
                 max-width: 600px;
+
+                .work__gif {
+                    display: flex;
+                }
+
+                .work__image {
+                    display: none;
+                }
             }
         }
         
